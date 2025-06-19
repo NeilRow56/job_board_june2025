@@ -22,7 +22,7 @@ export default function JobSeekerLayout({
         <>
           {sidebar}
           <SidebarNavMenuGroup
-            className='mt-auto'
+            className=''
             items={[
               { href: '/', icon: <ClipboardListIcon />, label: 'Job Board' },
               {
