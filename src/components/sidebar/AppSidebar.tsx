@@ -31,13 +31,15 @@ export function AppSidebar({
             <span className='text-xl text-nowrap'>WDS Jobs</span>
           </SidebarHeader>
           <SidebarContent>{content}</SidebarContent>
-          <SignedIn>
-            <SidebarFooter className='mb-16'>
-              <SidebarMenu>
-                <SidebarMenuItem>{footerButton}</SidebarMenuItem>
-              </SidebarMenu>
-            </SidebarFooter>
-          </SignedIn>
+          <div className='mb-16'>
+            <SignedIn>
+              <SidebarFooter>
+                <SidebarMenu>
+                  <SidebarMenuItem>{footerButton}</SidebarMenuItem>
+                </SidebarMenu>
+              </SidebarFooter>
+            </SignedIn>
+          </div>
         </Sidebar>
         <main className='flex-1'>{children}</main>
       </AppSidebarClient>
